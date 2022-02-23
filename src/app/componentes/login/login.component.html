@@ -1,0 +1,19 @@
+<div class="mdc-card contentCenter" *ngIf="!login">
+  <form >
+    <div class="imgcontainer">
+      <h3>Login</h3>
+    </div>
+  
+    <div class="container" >
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" [(ngModel)]="correo" name="uname" required >
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password"  [(ngModel)]="password" name="psw" required>
+      <div class="container" style="background-color:#f1f1f1;text-align: center;">
+        <button type="button" (click)="loginUser()">Login</button>
+       
+      </div>
+    </div>
+  </form>
+</div>

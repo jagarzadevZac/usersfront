@@ -1,0 +1,9 @@
+<div class="topnav" id="myTopnav" >
+  <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+  <a [routerLink]="['/empleados']" routerLinkActive="router-link-active" *ngIf="tipoUsuario">Empleados</a>
+  <a [routerLink]="['/juego']" routerLinkActive="router-link-active" *ngIf="!tipoUsuario" >Juego</a>
+  <a [routerLink]="['/login']" routerLinkActive="router-link-active" (click)="logout()">Exit</a>
+</div>
+<h2 style="text-align: center;padding-top: 7rem;">
+  Bienvenido {{usuario}}
+</h2>
